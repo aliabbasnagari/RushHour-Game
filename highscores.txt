@@ -1,0 +1,12 @@
+1     Ali_Abbas     62
+2     N0omi_aa     61
+3     Ali_Abbas_Afridi     50
+4     Ali_Nagari     44
+5     Nasir_khan     40
+6     Ali_Abbas     30
+7     Abbas_ali     29
+8     Ali_Nagari     25
+9     Junaid     22
+10     Sameer_lala     21
+
+
