@@ -3,7 +3,6 @@ RushHour Semester-1 Project
 
 ## Description
 Rush Hour is a game where player has to drive taxi and earn points by picking and dropping passengers at their destinations.
-[fdsfsf]
 
 ## How to Play
 To play Rush Hour, you will need to first compile the game using C++ and add the Glut and GLEW libraries. Here are the steps to do so:
@@ -16,12 +15,6 @@ To play Rush Hour, you will need to first compile the game using C++ and add the
 
 Use the arrow keys to control your taxi and avoid obstacles as you make your way through the city. Follow the on-screen prompts to pick up and drop off passengers at their designated locations and earn points for completing each task successfully.
 
-If you have any issues with compiling or running the game, please refer to the project documentation or get in touch with the project team for assistance.
+If you have any issues with compiling or running the game, please refer to the project documentation or get in touch for assistance.
 
-## Contributors
-This project was created by [insert contributor names here]. If you would like to contribute to the project, please feel free to submit a pull request or get in touch with the project team.
-
-## License
-This project is licensed under the [insert license here] license. See the LICENSE file for more information.
-
-Have Fun playing Rush Hour!
+## Have Fun playing Rush Hour!
