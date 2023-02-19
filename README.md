@@ -18,4 +18,4 @@ Use the arrow keys to control your taxi and avoid obstacles as you make your way
 If you have any issues with compiling or running the game, please refer to the project documentation or get in touch for assistance.
 
 ## Have Fun playing Rush Hour!
-Project is under development ⚒
+Project is under development 🛠
