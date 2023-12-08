@@ -1,6 +1,10 @@
 # RushHour Game
 RushHour Semester-1 Project
 
+- Game Play (Click to Play)
+
+[![Watch the Video](https://res.cloudinary.com/upwork-fp/video/upload/c_scale,w_1000,q_auto/v1662583839/profile/portfolio/1567577581899276288/cw4jn2uddvnoyuz1gwjx.jpeg)](https://res.cloudinary.com/upwork-fp/video/upload/c_scale,w_1000,q_auto/v1662583839/profile/portfolio/1567577581899276288/cw4jn2uddvnoyuz1gwjx.mp4)
+
 ## Description
 Rush Hour is a game where player has to drive taxi and earn points by picking and dropping passengers at their destinations.
 
