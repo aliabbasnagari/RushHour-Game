@@ -269,8 +269,8 @@ void RoundRect(int x, int y, int width, int height, int radius,
 		segment_count * sizeof(Vector2f)), *top_right =
 		(Vector2f *)malloc(segment_count * sizeof(Vector2f)),
 		*bottom_right = (Vector2f *)malloc(
-		segment_count * sizeof(Vector2f)), bottom_left_corner = { x
-		+ radius, y - height + radius };
+		segment_count * sizeof(Vector2f)), bottom_left_corner = {
+		(float)(x + radius), (float)(y - height + radius) };
 
 	while (i != segment_count) {
 		x_offset = cosf(angle);

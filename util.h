@@ -5,9 +5,11 @@
 
 #ifndef UTIL_H_
 #define UTIL_H_
+#ifdef _WIN32
 #include <Windows.h>
-#include <GL\glew.h> 
-#include <GL\freeglut.h>
+#endif
+#include <GL/glew.h>
+#include <GL/freeglut.h>
 
 
 //#include <GL/gl.h>
@@ -296,7 +298,9 @@ static float colors[][3] = { { 0.501960784313726, 0, 0 }, { 0.545098039215686,
 		{ 0, 0, 0 }, { 0.734375, 0.734375, 0.734375} };
 
 //defining some MACROS
+#ifndef M_PI
 #define M_PI 3.141519
+#endif
 #define MAX(A,B) ((A) > (B) ? (A):(B)) // finds max of two numbers
 #define MIN(A,B) ((A) < (B) ? (A):(B)) // find min of two numbers
 #define ABS(A) ((A) < (0) ? -(A):(A))  // find ABS of a given number
