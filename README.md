@@ -3,7 +3,7 @@ RushHour Semester-1 Project
 
 - Game Play (Click to Play)
 
-[![Watch the Video](https://github.com/aliabbasnagari/RushHour-Game/raw/refs/heads/master/gameplay.mp4)
+![Watch the Video](https://github.com/aliabbasnagari/RushHour-Game/raw/refs/heads/master/gameplay.mp4)
 
 ## Description
 Rush Hour is a game where player has to drive taxi and earn points by picking and dropping passengers at their destinations.
