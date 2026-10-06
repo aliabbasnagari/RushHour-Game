@@ -1,16 +1,19 @@
 # RushHour Game
+
 RushHour Semester-1 Project
 
 - Game Play (Click to Play)
 
-![DEMO](https://raw.githubusercontent.com/aliabbasnagari/RushHour-Game/refs/heads/master/gameplay.gif)
+![DEMO](https://raw.githubusercontent.com/aliabbasnagari/RushHour-Game/refs/heads/master/demo/gameplay.gif)
 
-![Watch the Video](https://github.com/aliabbasnagari/RushHour-Game/raw/refs/heads/master/gameplay.mp4)
+![Watch the Video](https://github.com/aliabbasnagari/RushHour-Game/raw/refs/heads/master/demo/gameplay.mp4)
 
 ## Description
+
 Rush Hour is a game where player has to drive taxi and earn points by picking and dropping passengers at their destinations.
 
 ## How to Play
+
 To play Rush Hour, you will need to first compile the game using C++ and add the Glut and GLEW libraries. Here are the steps to do so:
 
 1. Download or clone the repository to your local machine.
@@ -24,4 +27,5 @@ Use the arrow keys to control your taxi and avoid obstacles as you make your way
 If you have any issues with compiling or running the game, please refer to the project documentation or get in touch for assistance.
 
 ## Have Fun playing Rush Hour!
+
 Project is under development 🛠

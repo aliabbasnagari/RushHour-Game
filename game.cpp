@@ -27,6 +27,7 @@ void drawBoxes(int, int);
 void dropPoint();
 void dispItems();
 void calculateDistances();
+bool ocarHitsBuilding(int, int);
 void moveOcar(int&, int&, char, bool&);
 void setDrop();
 void randGenerator(int arr[][2], int);
@@ -252,10 +253,28 @@ void calculateDistances() {
 	}
 }
 
+// Returns true if a 40x40 opponent car placed at (xc, yc) would overlap
+// any building, so moveOcar can stop it at the wall instead of letting
+// it drive straight through.
+bool ocarHitsBuilding(int xc, int yc) {
+	const int carSize = 40, bulSize = 40;
+	for (int i = 0; i < noBul; i++) {
+		if (xc < bulCD[i][0] + bulSize && xc + carSize > bulCD[i][0]
+				&& yc < bulCD[i][1] + bulSize && yc + carSize > bulCD[i][1]) {
+			return true;
+		}
+	}
+	return false;
+}
+
 // This function moves obstacle cars randomly
-void moveOcar(int& xc, int& yc, char axis, bool &dir) {	
+void moveOcar(int& xc, int& yc, char axis, bool &dir) {
 	if (axis == 'x') {
 		if (xc > 10 && dir) {
+			if (ocarHitsBuilding(xc - ocarSpeed, yc)) {
+				dir = false;
+				return;
+			}
 			xc -= ocarSpeed;
 			// cout << "going left, ";
 			if (xc < 80) {
@@ -265,6 +284,10 @@ void moveOcar(int& xc, int& yc, char axis, bool &dir) {
 				dir = false;
 			}
 		} else if (xc < 800 && !dir) {
+			if (ocarHitsBuilding(xc + ocarSpeed, yc)) {
+				dir = true;
+				return;
+			}
 			xc += ocarSpeed;
 			//cout << "going right, ";
 			if (xc > 700) {
@@ -276,6 +299,10 @@ void moveOcar(int& xc, int& yc, char axis, bool &dir) {
 		}
 	} else {
 		if (yc > 10 && dir) {
+			if (ocarHitsBuilding(xc, yc - ocarSpeed)) {
+				dir = false;
+				return;
+			}
 			yc -= ocarSpeed;
 			// cout << "going left, ";
 			if (yc < 80) {
@@ -285,6 +312,10 @@ void moveOcar(int& xc, int& yc, char axis, bool &dir) {
 				dir = false;
 			}
 		} else if (yc < 800 && !dir) {
+			if (ocarHitsBuilding(xc, yc + ocarSpeed)) {
+				dir = true;
+				return;
+			}
 			yc += ocarSpeed;
 			//cout << "going right, ";
 			if (yc > 700) {
