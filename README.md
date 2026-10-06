@@ -3,6 +3,8 @@ RushHour Semester-1 Project
 
 - Game Play (Click to Play)
 
+![DEMO](https://raw.githubusercontent.com/aliabbasnagari/RushHour-Game/refs/heads/master/gameplay.gif)
+
 ![Watch the Video](https://github.com/aliabbasnagari/RushHour-Game/raw/refs/heads/master/gameplay.mp4)
 
 ## Description
